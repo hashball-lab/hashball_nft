@@ -10,14 +10,14 @@ contract HashBallNFT is ERC721URIStorage, ERC2981 {
     uint256 public nftindex = 1;
     mapping (address => uint256) private addressMintNFTCount;
 
-    uint256 public NFTprice = 0.002 * 10 ** 18;
+    uint256 public NFTprice = 1 * 10 ** 18;
     uint256 public constant MAXSUPPLY = 10000;
     uint256 public constant FIRST_MAXSUPPLY = 3000;
     uint256 public constant ADDRESS_MAX = 5;
     bool public continue_mint = false;
-    uint256 public start_time = 1741327200;
+    uint256 public start_time = 1745582400;
 
-    string public _metadataURI = "https://variable-pink-nightingale.myfilebase.com/ipfs/QmdjBCRsrwJLRsUNZZVBb7RDbPFpXqMczmVXjGhWEekzWR";
+    string public _metadataURI = "https://variable-pink-nightingale.myfilebase.com/ipfs/QmW8SCUu65wVWTd6QVgUK5j1f8MG7aXiExKZgf33WxxW2i";
 
     constructor(string memory name, string memory symbol, address _owner) ERC721(name, symbol) {
         owner = _owner;
